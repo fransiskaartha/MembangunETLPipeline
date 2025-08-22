@@ -1,0 +1,25 @@
+Proyek Membangun ETL Pipeline
+
+Deskripsi:
+Proyek ini mengimplementasikan sebuah pipeline ETL (Extract, Transform, Load). Komponen utamanya meliputi:
+1. Ekstraksi: Data dikikis dari sebuah sumber (fungsi: scrape_all_pages) dan disimpan sebagai data mentah.
+2. Transformasi: Data ditransformasikan menggunakan fungsi transform_data.
+3. Memuat: Data yang ditransformasikan dapat dimuat ke berbagai tujuan, seperti file CSV, Google Spreadsheet, atau PostgreSQL.
+
+Struktur Folder:
+- google-sheets-api.json: File konfigurasi untuk menghubungkan ke Google Spreadsheet.
+- main.py: Skrip utama yang menjalankan pipeline ETL.
+- products.csv: Contoh keluaran data akhir (setelah transformasi dan pemuatan).
+- tests/: Berisi kasus-kasus uji untuk memvalidasi proses ETL.
+- utils/: Berisi fungsi-fungsi utilitas untuk ekstraksi, transformasi, dan pemuatan.
+
+Petunjuk:
+1. Instal dependensi dengan menjalankan:
+   pip install -r requirements.txt
+2. Jalankan pipeline ETL dengan:
+   python main.py
+3. Coverage: coverage run -m pytest tests
+4. Pipeline akan mengikis data, mentransformasikannya, dan menyimpannya ke lokasi yang ditentukan.
+
+URL Google Sheets:
+https://docs.google.com/spreadsheets/d/1kL2vr6uXwN9Y31x1oQzCyCcR6URAaCbfp_tK9Zcx6ks

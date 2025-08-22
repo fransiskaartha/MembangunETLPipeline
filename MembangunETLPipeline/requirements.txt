@@ -1,0 +1,16 @@
+# Core dependencies
+pandas==2.2.0
+beautifulsoup4==4.12.0
+requests==2.32.0
+
+# Google Sheets integration
+gspread==6.2.1
+gspread-dataframe==4.0.0
+google-auth==2.36.0
+
+# PostgreSQL
+psycopg2-binary==2.9.10
+
+# Testing and coverage
+pytest==7.0.0
+coverage==7.4.4
